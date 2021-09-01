@@ -9,14 +9,8 @@ export default function App(): ReactElement {
         alignItems: 'center'
       }}
     >
-      <p>Invilli</p>
-      <p>Invilli</p>
-      <p>Invilli</p>
-      <p>Invilli</p>
-      <p>Invilli</p>
-      <p>Invilli</p>
-      <p>Invilli</p>
-      <p>Invilli</p>
+      <p>Invillia</p>
+      <strong>A invillia é uma empresa excelente</strong>
     </div>
   )
 }

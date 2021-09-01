@@ -1,6 +1,10 @@
 name: 'Deploy Vercel'
 
-on: [push]
+on:
+  workflow_run:
+    workflows: [ Quality ]
+    branches: [ main ]
+    types: [ completed ]
 
 jobs:
   deploy-vercel:
@@ -8,7 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # deploy app to vercel
       - name: Deploy to Vercel
         uses: amondnet/vercel-action@v20
         with:
