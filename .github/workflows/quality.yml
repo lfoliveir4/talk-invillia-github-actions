@@ -13,7 +13,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 'Use Node.js Version 12.x'
+      - name: 'Use Node.js Version 14.x'
         uses: actions/setup-node@v2
         with:
           node-version: 14.x
@@ -26,6 +26,7 @@ jobs:
 
   unit-test:
     name: 'Unit-test'
+    needs: lint-test
     runs-on: ubuntu-latest
 
     steps:
@@ -34,10 +35,10 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 'Use Node.js Version 12.x'
+      - name: 'Use Node.js Version 14.x'
         uses: actions/setup-node@v2
         with:
-          node-version: 12.x
+          node-version: 14.x
 
       - name: 'Install Dependencies'
         run: yarn install
