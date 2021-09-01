@@ -10,7 +10,7 @@ export default function App(): ReactElement {
       }}
     >
       <p>Invillia</p>
-      <strong>A invillia é uma empresa excelente</strong>
+      <strong>A invillia é uma empresa excelente!</strong>
     </div>
   )
 }
