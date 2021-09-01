@@ -6,11 +6,13 @@ export default function App(): ReactElement {
       style={{
         display: 'flex',
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        flexDirection: "column"
       }}
     >
       <p>Invillia</p>
       <strong>A invillia é uma empresa excelente!</strong>
+      <strong>tech na veia!</strong>
     </div>
   )
 }
