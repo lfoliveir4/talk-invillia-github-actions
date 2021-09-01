@@ -26,6 +26,7 @@ jobs:
 
   unit-test:
     name: 'Unit-test'
+    needs: lint-test
     runs-on: ubuntu-latest
 
     steps:
